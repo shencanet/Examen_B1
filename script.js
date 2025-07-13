@@ -12,13 +12,76 @@ const finalScoreEl = document.getElementById("final-score");
 const restartBtn = document.getElementById("restart-btn");
 
 let allQuestions = [
-  { question: "¿Los sistemas de seguridad pasiva incluyen ...?", options: ["Alumbrado, neumáticos, frenos y suspensión.", "Frenos, Neumáticos, airbags y cinturones de seguridad.", "Cinturones de seguridad, airbags, apoyacabezas y casco"], correct: 2 },
-  { question: "¿Qué puede ocurrir si al atravesar un charco de agua los frenos se mojan?", options: ["Que pueden perder temporalmente su eficacia", "Que se estropean y deben cambiarse las zapatas o pastillas", "Que se reduce la distancia de frenado"], correct: 0 },
-  { question: "¿De los siguientes factores cuál favorece la aparición de fatiga?", options: ["Conducir un vehículo con defectos en la dirección o en la suspensión", "Conducir un vehículo con un cuadro de mandos bien diseñado", "Circular a una velocidad adecuada por una vía en buen estado"], correct: 0 },
-  { question: "¿Cuántos espejos retrovisores debe llevar, como mínimo, un turismo?", options: ["4", "2", "3"], correct: 1 },
-  { question: "Una de las principales causas de accidente en personas jóvenes es...", options: ["La falta de reflejos", "El exceso de velocidad", "La falta de confianza en su capacidad de conducción"], correct: 1 },
-  { question: "¿Cómo se denominan los costes de pérdida de vidas, de capacidad productiva y el sufrimiento físico o psicológico que tienen lugar como consecuencia de un accidente de tráfico?", options: ["Costes sanitarios", "Costes materiales", "Costes humanos"], correct: 2 },
+  {
+    question: "¿Los sistemas de seguridad pasiva incluyen ...?",
+    options: [
+      "Alumbrado, neumáticos, frenos y suspensión.",
+      "Frenos, Neumáticos, airbags y cinturones de seguridad.",
+      "Cinturones de seguridad, airbags, apoyacabezas y casco",
+    ],
+    correct: 2,
+  },
+  {
+    question:
+      "¿Qué puede ocurrir si al atravesar un charco de agua los frenos se mojan?",
+    options: [
+      "Que pueden perder temporalmente su eficacia",
+      "Que se estropean y deben cambiarse las zapatas o pastillas",
+      "Que se reduce la distancia de frenado",
+    ],
+    correct: 0,
+  },
+  {
+    question:
+      "¿De los siguientes factores cuál favorece la aparición de fatiga?",
+    options: [
+      "Conducir un vehículo con defectos en la dirección o en la suspensión",
+      "Conducir un vehículo con un cuadro de mandos bien diseñado",
+      "Circular a una velocidad adecuada por una vía en buen estado",
+    ],
+    correct: 0,
+  },
+  {
+    question:
+      "¿Cuántos espejos retrovisores debe llevar, como mínimo, un turismo?",
+    options: ["4", "2", "3"],
+    correct: 1,
+  },
+  {
+    question:
+      "Una de las principales causas de accidente en personas jóvenes es...",
+    options: [
+      "La falta de reflejos",
+      "El exceso de velocidad",
+      "La falta de confianza en su capacidad de conducción",
+    ],
+    correct: 1,
+  },
+  {
+    question:
+      "¿Cómo se denominan los costes de pérdida de vidas, de capacidad productiva y el sufrimiento físico o psicológico que tienen lugar como consecuencia de un accidente de tráfico?",
+    options: [
+      "Costes sanitarios", 
+      "Costes materiales", 
+      "Costes humanos"
+    ],
+    correct: 2,
+  },
+  
+{ question: "En caso de niebla espesa, ¿qué alumbrado es obligatorio llevar encendido para poder circular con un turismo?"
+  , options: ["La luz de posición, la de corto alcance y la antiniebla trasera.",
+     "La luz de posición, la de corto alcance y la antiniebla delantera.",
+     "La luz de posición, la de corto alcance y la antiniebla tanto la delantera como la trasera."], correct: 0 },
+     
+
+{ question: "¿Qué puede hacer para evitar los accidentes debidos al sueño o a la fatiga?"
+  , options: ["Conducir más rápido para que la conducción sea más distraída.",
+     "Prestar atención a los signos y síntomas del sueño, a la fatiga, y parar a descansar..",
+     "Circular por vías desconocidas."], correct: 1 },
+
+
   // Agrega aquí más preguntas...
+
 ];
 
 let selectedQuestions = [];
@@ -49,15 +112,20 @@ function startTimer() {
 function updateTimerDisplay() {
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
-  timerEl.textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  timerEl.textContent = `${minutes.toString().padStart(2, "0")}:${seconds
+    .toString()
+    .padStart(2, "0")}`;
 }
 
 function fetchCatImage() {
-  return fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1", {
-    headers: { "x-api-key": "DEMO-API-KEY" },
-  })
-    .then(res => res.json())
-    .then(data => data[0].url)
+  return fetch(
+    "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",
+    {
+      headers: { "x-api-key": "DEMO-API-KEY" },
+    }
+  )
+    .then((res) => res.json())
+    .then((data) => data[0].url)
     .catch(() => "https://placekitten.com/300/300");
 }
 
@@ -122,7 +190,9 @@ function endQuiz(message) {
   clearInterval(timerInterval);
   quizContainer.style.display = "none";
   resultEl.style.display = "block";
-  finalScoreEl.innerHTML = `${message}<br>Puntuación: ${currentQuestion - failures} de ${selectedQuestions.length}`;
+  finalScoreEl.innerHTML = `${message}<br>Puntuación: ${
+    currentQuestion - failures
+  } de ${selectedQuestions.length}`;
 }
 
 function restartQuiz() {

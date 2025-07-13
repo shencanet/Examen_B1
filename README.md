@@ -16,7 +16,7 @@ Esta aplicación web permite a los usuarios practicar para un examen de nivel **
 - 🔁 Posibilidad de reiniciar el test.
 - ⚙️ 100% en HTML, CSS y JavaScript puro (sin frameworks).
 
-## 📁 Estructura del proyecto
+
 
 
 ## ▶️ Cómo usar
