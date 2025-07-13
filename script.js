@@ -20,6 +20,9 @@ const quizData = [
   { question: "¿Los sistemas de seguridad pasiva incluyen ...?", options: ["Alumbrado, neumaticos,frenos y suspensión.", "Frenos, Neumaticos, airbags y cinturones de seguridad.", "Cinturones seguridad, airbags apoyacabezas y Casco"], correct: 2 },
   { question: "¿Que puede ocurrir si al atravesar un charco de agua los frenos se mojan?", options: ["Que pueden perder temporalmente su eficacia", "Que se estropean y deben cambiarse las zapatas o pastillas", "Que se reduce la distancia de Frenado"], correct: 0 },
   { question: "¿De los siguientes factores  cual favorece la aparicion de fatiga", options: ["¿Conducir un vehiculo con defectos en la direccion o en la suspension?", "Conducir un vehiculo con un cuadro de mandos bien diseñado", "Circular a una velocidad adecuada por una via en buen estado"], correct: 0 },
+  { question: "¿Cuántos espejos retrovisores debe llevar, como mínimo, un turismo?", options: ["4", "2", "3"], correct: 1 },
+  { question: "Una de las principales causas de accidente en personas jóvenes es...", options: ["la falta de reflejos.", "el exceso de velocidad.", "la falta de confianza en su capacidad de conducción."], correct: 1 },
+  { question: "¿Cómo se denominan los costes de pérdida de vidas, de capacidad productiva y el sufrimiento físico o psicológico que tienen lugar como consecuencia de un accidente de tráfico?", options: ["Costes sanitarios.", "Costes materiales.", "Costes humanos."], correct: 2 },
 ];
 
 function startTimer() {
