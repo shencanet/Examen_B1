@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
   margin: 0;
-  padding: 20px;
+  padding: 30px;
 }
 
 .container {
@@ -27,15 +27,19 @@ h1 {
 }
 
 #question {
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* más grande */
+  font-weight: bold; /* en negrita */
   margin-bottom: 10px;
+  color: #222;
 }
 
 #answers label {
   display: block;
+   font-weight: bold;
   margin-bottom: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: blue;
 }
 
 #submit {
@@ -80,8 +84,8 @@ h1 {
 }
 
 #question-image {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height:500px
   object-fit: cover;
   border-radius: 8px;
   margin: 10px 0;

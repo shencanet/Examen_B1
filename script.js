@@ -117,18 +117,17 @@ function updateTimerDisplay() {
     .padStart(2, "0")}`;
 }
 
-function fetchCatImage() {
+function fetchMotorcycleImage() {
   return fetch(
-    "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",
+    "https://api.unsplash.com/photos/random?query=motorcycle&orientation=landscape&content_filter=high",
     {
-      headers: { "x-api-key": "DEMO-API-KEY" },
+      headers: { Authorization: "Client-ID lVxRYD6NI7DCcDqF7RrApVQXp6mkU38PIgn5sLbNgWM" },
     }
   )
     .then((res) => res.json())
-    .then((data) => data[0].url)
-    .catch(() => "https://placekitten.com/300/300");
+    .then((data) => data.urls?.regular || "https://via.placeholder.com/300x200?text=No+Image")
+    .catch(() => "https://via.placeholder.com/300x200?text=Error");
 }
-
 async function loadQuestion() {
   feedbackEl.textContent = "";
   submitBtn.disabled = false;
@@ -144,7 +143,7 @@ async function loadQuestion() {
 
   imageEl.style.display = "none";
   imageEl.src = "";
-  const imgUrl = await fetchCatImage();
+  const imgUrl = await fetchMotorcycleImage();
   imageEl.src = imgUrl;
   imageEl.style.display = "block";
 
