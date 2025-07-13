@@ -18,3 +18,27 @@ Esta aplicación web permite a los usuarios practicar para un examen de nivel **
 
 ## 📁 Estructura del proyecto
 
+
+## ▶️ Cómo usar
+
+1. Abre la app en el navegador: [https://shencanet.github.io/Examen_B1/](https://shencanet.github.io/Examen_B1/)
+2. Lee atentamente cada pregunta.
+3. Selecciona tu respuesta.
+4. Al terminar, haz clic en "Enviar" para ver tu puntuación.
+5. Puedes hacer clic en "Reiniciar" para repetir el test.
+
+## ✅ Requisitos
+
+No necesita instalación. Solo necesitas:
+
+- Un navegador web moderno (Chrome, Firefox, Edge, etc.)
+- Conexión a internet
+
+## ✍️ Autor
+
+**Shencanet**  
+GitHub: [@shencanet](https://github.com/shencanet)
+
+---
+
+¡Gracias por usar esta aplicación! Cualquier sugerencia o mejora es bienvenida 😊
