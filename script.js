@@ -8,31 +8,41 @@ const imageEl = document.getElementById("question-image");
 const timerEl = document.getElementById("timer");
 const quizContainer = document.getElementById("quiz-container");
 const resultEl = document.getElementById("result");
+const finalScoreEl = document.getElementById("final-score");
+const restartBtn = document.getElementById("restart-btn");
 
+let allQuestions = [
+  { question: "¿Los sistemas de seguridad pasiva incluyen ...?", options: ["Alumbrado, neumáticos, frenos y suspensión.", "Frenos, Neumáticos, airbags y cinturones de seguridad.", "Cinturones de seguridad, airbags, apoyacabezas y casco"], correct: 2 },
+  { question: "¿Qué puede ocurrir si al atravesar un charco de agua los frenos se mojan?", options: ["Que pueden perder temporalmente su eficacia", "Que se estropean y deben cambiarse las zapatas o pastillas", "Que se reduce la distancia de frenado"], correct: 0 },
+  { question: "¿De los siguientes factores cuál favorece la aparición de fatiga?", options: ["Conducir un vehículo con defectos en la dirección o en la suspensión", "Conducir un vehículo con un cuadro de mandos bien diseñado", "Circular a una velocidad adecuada por una vía en buen estado"], correct: 0 },
+  { question: "¿Cuántos espejos retrovisores debe llevar, como mínimo, un turismo?", options: ["4", "2", "3"], correct: 1 },
+  { question: "Una de las principales causas de accidente en personas jóvenes es...", options: ["La falta de reflejos", "El exceso de velocidad", "La falta de confianza en su capacidad de conducción"], correct: 1 },
+  { question: "¿Cómo se denominan los costes de pérdida de vidas, de capacidad productiva y el sufrimiento físico o psicológico que tienen lugar como consecuencia de un accidente de tráfico?", options: ["Costes sanitarios", "Costes materiales", "Costes humanos"], correct: 2 },
+  // Agrega aquí más preguntas...
+];
+
+let selectedQuestions = [];
 let currentQuestion = 0;
 let failures = 0;
 const maxFailures = 3;
-const quizTime = 20 * 60; // 20 minutos en segundos
+const totalQuestions = 30;
+const quizTime = 20 * 60;
 let timeLeft = quizTime;
 let timerInterval;
 
-const quizData = [
-  { question: "¿Los sistemas de seguridad pasiva incluyen ...?", options: ["Alumbrado, neumaticos,frenos y suspensión.", "Frenos, Neumaticos, airbags y cinturones de seguridad.", "Cinturones seguridad, airbags apoyacabezas y Casco"], correct: 2 },
-  { question: "¿Que puede ocurrir si al atravesar un charco de agua los frenos se mojan?", options: ["Que pueden perder temporalmente su eficacia", "Que se estropean y deben cambiarse las zapatas o pastillas", "Que se reduce la distancia de Frenado"], correct: 0 },
-  { question: "¿De los siguientes factores  cual favorece la aparicion de fatiga", options: ["¿Conducir un vehiculo con defectos en la direccion o en la suspension?", "Conducir un vehiculo con un cuadro de mandos bien diseñado", "Circular a una velocidad adecuada por una via en buen estado"], correct: 0 },
-  { question: "¿Cuántos espejos retrovisores debe llevar, como mínimo, un turismo?", options: ["4", "2", "3"], correct: 1 },
-  { question: "Una de las principales causas de accidente en personas jóvenes es...", options: ["la falta de reflejos.", "el exceso de velocidad.", "la falta de confianza en su capacidad de conducción."], correct: 1 },
-  { question: "¿Cómo se denominan los costes de pérdida de vidas, de capacidad productiva y el sufrimiento físico o psicológico que tienen lugar como consecuencia de un accidente de tráfico?", options: ["Costes sanitarios.", "Costes materiales.", "Costes humanos."], correct: 2 },
-];
+function shuffleArray(array) {
+  return [...array].sort(() => Math.random() - 0.5);
+}
 
 function startTimer() {
+  clearInterval(timerInterval);
   timerInterval = setInterval(() => {
     timeLeft--;
     if (timeLeft < 0) {
       endQuiz("Se acabó el tiempo.");
-      return;
+    } else {
+      updateTimerDisplay();
     }
-    updateTimerDisplay();
   }, 1000);
 }
 
@@ -43,19 +53,10 @@ function updateTimerDisplay() {
 }
 
 function fetchCatImage() {
-  const headers = new Headers({
-    "Content-Type": "application/json",
-    "x-api-key": "DEMO-API-KEY"
-  });
-
-  const requestOptions = {
-    method: 'GET',
-    headers: headers,
-    redirect: 'follow'
-  };
-
-  return fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1", requestOptions)
-    .then(response => response.json())
+  return fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1", {
+    headers: { "x-api-key": "DEMO-API-KEY" },
+  })
+    .then(res => res.json())
     .then(data => data[0].url)
     .catch(() => "https://placekitten.com/300/300");
 }
@@ -64,29 +65,25 @@ async function loadQuestion() {
   feedbackEl.textContent = "";
   submitBtn.disabled = false;
 
-  if (currentQuestion >= quizData.length) {
+  if (currentQuestion >= selectedQuestions.length) {
     endQuiz("¡Has completado el examen!");
     return;
   }
 
-  const q = quizData[currentQuestion];
+  const q = selectedQuestions[currentQuestion];
   questionNumberEl.textContent = currentQuestion + 1;
   questionEl.textContent = q.question;
 
-  // Imagen gatito
   imageEl.style.display = "none";
   imageEl.src = "";
-  const catImageUrl = await fetchCatImage();
-  imageEl.src = catImageUrl;
+  const imgUrl = await fetchCatImage();
+  imageEl.src = imgUrl;
   imageEl.style.display = "block";
 
   answersEl.innerHTML = "";
   q.options.forEach((option, i) => {
     const label = document.createElement("label");
-    label.innerHTML = `
-      <input type="radio" name="answer" value="${i}" />
-      ${option}
-    `;
+    label.innerHTML = `<input type="radio" name="answer" value="${i}" /> ${option}`;
     answersEl.appendChild(label);
     answersEl.appendChild(document.createElement("br"));
   });
@@ -98,11 +95,10 @@ function checkAnswer() {
     feedbackEl.textContent = "Por favor, selecciona una respuesta.";
     return;
   }
-  
-  submitBtn.disabled = true;
 
+  submitBtn.disabled = true;
   const answerIndex = parseInt(selected.value);
-  const correctIndex = quizData[currentQuestion].correct;
+  const correctIndex = selectedQuestions[currentQuestion].correct;
 
   if (answerIndex === correctIndex) {
     feedbackEl.style.color = "green";
@@ -111,27 +107,40 @@ function checkAnswer() {
     failures++;
     failuresLeftEl.textContent = maxFailures - failures;
     feedbackEl.style.color = "red";
-    feedbackEl.innerHTML = `Respuesta incorrecta. La respuesta correcta es: <strong>${quizData[currentQuestion].options[correctIndex]}</strong>.`;
+    feedbackEl.innerHTML = `Incorrecta. La respuesta correcta es: <strong>${selectedQuestions[currentQuestion].options[correctIndex]}</strong>.`;
     if (failures >= maxFailures) {
       endQuiz("Has superado el número máximo de fallos permitidos.");
       return;
     }
   }
+
   currentQuestion++;
-  
-  setTimeout(() => {
-    loadQuestion();
-  }, 2000);
+  setTimeout(() => loadQuestion(), 1500);
 }
 
 function endQuiz(message) {
   clearInterval(timerInterval);
   quizContainer.style.display = "none";
   resultEl.style.display = "block";
-  resultEl.textContent = message + ` Tu puntuación: ${currentQuestion - failures} / ${quizData.length}`;
+  finalScoreEl.innerHTML = `${message}<br>Puntuación: ${currentQuestion - failures} de ${selectedQuestions.length}`;
+}
+
+function restartQuiz() {
+  selectedQuestions = shuffleArray(allQuestions).slice(0, totalQuestions);
+  currentQuestion = 0;
+  failures = 0;
+  timeLeft = quizTime;
+  failuresLeftEl.textContent = maxFailures;
+
+  resultEl.style.display = "none";
+  quizContainer.style.display = "block";
+
+  loadQuestion();
+  startTimer();
 }
 
 submitBtn.addEventListener("click", checkAnswer);
+restartBtn.addEventListener("click", restartQuiz);
 
-loadQuestion();
-startTimer();
+// Inicia el test
+restartQuiz();

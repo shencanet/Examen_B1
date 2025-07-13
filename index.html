@@ -9,6 +9,8 @@
 <body>
   <div class="container">
     <h1>Examen Tipo Test B1 - Teórica</h1>
+        <h1>By Santi Dionis</h1>
+
     <div id="info-bar">
       <p><strong>Pregunta:</strong> <span id="question-number">1</span>/30</p>
       <p><strong>Tiempo restante:</strong> <span id="timer">20:00</span></p>
@@ -17,13 +19,16 @@
 
     <div id="quiz-container">
       <p id="question"></p>
-      <img id="question-image" src="" alt="Imagen gatito" style="max-width: 300px; margin: 10px 0; display:none;" />
+      <img id="question-image" src="" alt="Imagen gatito" style="display:none;" />
       <div id="answers"></div>
       <button id="submit">Enviar</button>
       <p id="feedback"></p>
     </div>
 
-    <div id="result" style="display:none;"></div>
+    <div id="result" style="display:none;">
+      <p id="final-score"></p>
+      <button id="restart-btn">Reiniciar Test</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
