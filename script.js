@@ -102,7 +102,7 @@ let allQuestions = [
 
        { question: "Si el sistema de navegacion GPS es portatil ¿Que debe hacer el conductor?"
   , options: ["Circular por el carril derecho reducida para introducir la ruta.",
-     "Colocarloa una altura correcta y sin que entorpezca la visibilidad.",
+     "Colocarlo a una altura correcta y sin que entorpezca la visibilidad.",
      "Seguir siempre sus instrucciones aunque esten en contradiccion con la señalizacion"], correct: 1 },
 
        { question: "¿En el ambito del trafico a que se le llama grupo vulnerables?"
@@ -140,10 +140,10 @@ let allQuestions = [
      "xxx",
      "xxx"], correct: 2 },
 
-       { question: "¿uuuuu?"
+       { question: "Eb una calzada con los dos sentidos de circulacion separados por una linea continua ?esta permitido girar a la izquierda?"
   , options: ["Si cuando no se comprometa la seguridad de los demás usuarios.",
      "Solo dentro de poblado.",
-     "NO"], correct: 1 },
+     "NO"], correct: 2 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",
