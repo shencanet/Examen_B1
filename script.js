@@ -79,8 +79,121 @@ let allQuestions = [
      "Prestar atención a los signos y síntomas del sueño, a la fatiga, y parar a descansar..",
      "Circular por vías desconocidas."], correct: 1 },
 
+ 
+
+     { question: "¿Referente a los sistemas avanzados de ayuda a la conduccion o ADAS ¿Como funciona el sistema LDW o side assist?"
+  , options: ["Mantiene automaticamente una distancia de seguridad con el vehiculo que circula delante.",
+     "Alerta e incluso corrige la trayectoria al detectar un cambio de carril motivado por distracción del conductor.",
+     "Analiza los objetos de delante y si existe posibilidad de atropello Frena"], correct: 1 },
+
+
+
+     { question: "¿Le esta permitido circular con un turismo si por sus ventanillas laterales sobresale la carga que lleve en el interior del vehiculo como puede ser una escalera?"
+  , options: ["Su, señalizando debidamente la carga con un panel de color rojo.",
+     "Solo si la carga no sobresale más de 30 cm por cada lado del vehículo.",
+     "No"], correct: 2 },
 
   // Agrega aquí más preguntas...
+
+  { question: "¿En este puesto de Peaje, que debe hacer?"
+  , options: ["Pasar sin detenerse por el puesto de peaje.",
+     "Pasar  sin detenerse porque la flecha esta en verde.",
+     "Detenerse en el puesto de control asi lo indica la señal"], correct: 2 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
+
+       { question: "¿uuuuu?"
+  , options: ["xxx",
+     "xxx",
+     "xxx"], correct: 1 },
 
 ];
 
