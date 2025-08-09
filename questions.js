@@ -148,7 +148,7 @@ let allQuestions = [
      "Utilizar el asiento correspondiente del conductor",
      "Ir sentado a horcajadas entre conductor y el manillar"], correct: 1 },
 
-       { question: "al salir de una zona privada para incorporarse a la circulacion ¿Se debe ceder el paso?"
+       { question: "Al salir de una zona privada para incorporarse a la circulacion ¿Se debe ceder el paso?"
   , options: ["Si a todos los vehiculos que circulen por la via a la que accede.",
      "No porque tiene prioridad sobre los vehiculos que circulen por la via a la que accede.",
      " Si pero solo a los vehiculos que vengan por la derecha"], correct: 0 },
@@ -163,10 +163,10 @@ let allQuestions = [
      "Debe utilizar el casco protector y sera responsable de que lo utiilice el acompañante",
      "Debe utilizar el casco protector y sera responsable de que lo utilice el acompañante pero solo en vias interurbanas"], correct: 1 },
 
-       { question: "Cuando no sea delito conducir un vehiculo con presencia de drogas en el organismo es unainfraccion..."
+       { question: "Cuando no sea delito conducir un vehiculo con presencia de drogas en el organismo es una infraccion..."
   , options: ["Muy Grave con perdida de 6 puntos del permiso de conducir",
      "Grave con perdida de 4 puntos del permiso de conducir",
-     "muy grave con perdida de 8 puntos"], correct: 0 },
+     "Muy grave con perdida de 8 puntos"], correct: 0 },
 
        { question: "Un ciclomotor de dos ruedas esta obligado a llevar..."
   , options: ["Retrovisor derecho",
