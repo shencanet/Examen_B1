@@ -143,10 +143,10 @@ let allQuestions = [
      "La distancia de frenado disminuye",
      "La conduccion debe ser mas rapida"], correct: 0 },
 
-       { question: "¿uuuuu?"
+       { question: "Si lleva pasajero en unamotocicleta deba saber que "
   , options: ["xxx",
      "xxx",
-     "xxx"], correct: 1 },
+     "xxx"], correct: 0 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",

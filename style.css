@@ -35,14 +35,25 @@ h1 {
 
 #answers label {
   display: block;
-  font-weight: bold;
+   font-weight: bold;
   margin-bottom: 8px;
   cursor: pointer;
   font-size: 1.1rem;
   color: blue;
 }
 
-#submit, #restart-btn {
+#submit {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+#restart-btn {
   margin-top: 10px;
   padding: 8px 15px;
   font-size: 1rem;
@@ -73,8 +84,8 @@ h1 {
 }
 
 #question-image {
-  width: 400px;
-  height: 350px; /* ← Aquí faltaba el ; */
+  width: 300px;
+  height:300px;
   object-fit: cover;
   border-radius: 8px;
   margin: 10px 0;
