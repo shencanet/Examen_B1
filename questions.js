@@ -123,7 +123,7 @@ let allQuestions = [
      "Solo en vias urbanas ",
      "No"], correct: 0 },
 
-       { question: "¿uuuuu?"
+       { question: "El coonductor de una motocicleta que va a girar a la izquierda, ¿Cómo debe señalizar su maniobra?"
   , options: ["Con el brazo extendido horizontalmente y la palma de la mano hacia arriba",
      "Con el brazo extendido horizontalmente y la palma de la mano hacia atras",
      "Con el Brazo extendido horizontalmente y la palma de la mano hacia abajo"], correct: 2 },
@@ -146,7 +146,7 @@ let allQuestions = [
        { question: "Si lleva pasajero en una motocicleta menor de edad  deba saber que "
   , options: ["Utilizar un sistema de retencion infantil homologado.",
      "Utilizar el asiento correspondiente del conductor",
-     "Ir sentado a horcajadas entre conductor y el manillar"], correct: 0 },
+     "Ir sentado a horcajadas entre conductor y el manillar"], correct: 1 },
 
        { question: "al salir de una zona privada para incorporarse a la circulacion ¿Se debe ceder el paso?"
   , options: ["Si a todos los vehiculos que circulen por la via a la que accede.",
@@ -158,25 +158,25 @@ let allQuestions = [
      "Someter el vehiculo a las inspecciones tecnicas que le correspondan.",
      "Contratar y mantener en vigor unseguro de responsabilidad civil"], correct: 0 },
 
-       { question: "El conductor de unamotocicleta que lleva unapersona en el asiento trasero..."
+       { question: "El conductor de una motocicleta que lleva una persona en el asiento trasero..."
   , options: ["Debe utilizar el casco protector y aconsejar al acompañante que lo utilice",
      "Debe utilizar el casco protector y sera responsable de que lo utiilice el acompañante",
      "Debe utilizar el casco protector y sera responsable de que lo utilice el acompañante pero solo en vias interurbanas"], correct: 1 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 0 },
+       { question: "Cuando no sea delito conducir un vehiculo con presencia de drogas en el organismo es unainfraccion..."
+  , options: ["Muy Grave con perdida de 6 puntos del permiso de conducir",
+     "Grave con perdida de 4 puntos del permiso de conducir",
+     "muy grave con perdida de 8 puntos"], correct: 0 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Un ciclomotor de dos ruedas esta obligado a llevar..."
+  , options: ["Retrovisor derecho",
+     "Solo el espejo retrovisor izquierdo",
+     "Dos espejos uno a cada lado "], correct: 1 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "En vias  interurbanas cual es el tipo de accidentes con victimas mas frecuentes"
+  , options: ["Atropellos a peatones",
+     "colisiones laterales",
+     "Salida de via"], correct: 1 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",
