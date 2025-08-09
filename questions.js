@@ -138,20 +138,20 @@ let allQuestions = [
      "La proximidad de un Tramo peligroso",
      "  u n carril especial"], correct: 1 },
 
-       { question: "¿Si lleva a un pasajero en un amotocicleta debe tener en cuenta"
+       { question: "¿Si lleva a un pasajero en una motocicleta debe tener en cuenta"
   , options: ["La distancia de frenado aumenta",
      "La distancia de frenado disminuye",
      "La conduccion debe ser mas rapida"], correct: 0 },
 
-       { question: "Si lleva pasajero en unamotocicleta deba saber que "
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 0 },
+       { question: "Si lleva pasajero en una motocicleta menor de edad  deba saber que "
+  , options: ["Utilizar un sistema de retencion infantil homologado.",
+     "Utilizar el asiento correspondiente del conductor",
+     "Ir sentado a horcajadas entre conductor y el manillar"], correct: 0 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "al salir de una zona privada para incorporarse a la circulacion ¿Se debe ceder el paso?"
+  , options: ["Si a todos los vehiculos que circulen por la via a la que accede.",
+     "No porque tiene prioridad sobre los vehiculos que circulen por la via a la que accede.",
+     " Si pero solo a los vehiculos que vengan por la derecha"], correct: 0 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",
