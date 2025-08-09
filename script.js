@@ -100,20 +100,20 @@ let allQuestions = [
      "Pasar  sin detenerse porque la flecha esta en verde.",
      "Detenerse en el puesto de control asi lo indica la señal"], correct: 2 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Si el sistema de navegacion GPS es portatil ¿Que debe hacer el conductor?"
+  , options: ["Circular por el carril derecho reducida para introducir la ruta.",
+     "Colocarloa una altura correcta y sin que entorpezca la visibilidad.",
+     "Seguir siempre sus instrucciones aunque esten en contradiccion con la señalizacion"], correct: 1 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿En el ambito del trafico a que se le llama grupo vulnerables?"
+  , options: ["A las personas que fallecen en accidente sin ser conductores o pasajeros de un vehiculo.",
+     "A los grupos de personas con mayor riesgo de sufrir un accidente.",
+     "A los menores de edad que sufren heridas graves en un accidente de trafico"], correct: 1 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿En una carretera convencional con arcen transitable por donde debe circular un ciclomotor?"
+  , options: ["Por el centro de la calzada.",
+     "Por la calzada lo más cerca posible del borde derecho.",
+     "Por el arcen de la derecha"], correct: 2 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",
