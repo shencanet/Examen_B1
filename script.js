@@ -115,35 +115,35 @@ let allQuestions = [
      "Por la calzada lo más cerca posible del borde derecho.",
      "Por el arcen de la derecha"], correct: 2 },
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿Durante los adelantamientos los conductores de turismos pueden superar la velocidad maxima permitida en el tramo de via por el que circulan?"
+  , options: ["Si , cuando circulen por carretera convencional fuera de poblado.",
+     "No esta prohibido",
+     "Si siempre que tengan que circular por el carril de sentido contrario"], correct: 1 },
+
+       { question: "¿Un ciclomotor y un turismo llegan al mismo tiempo a un estrechamiento en el que no esta señalizada la prioridad de paso que vehiculo pasa primero ?"
+  , options: ["Motocicleta o ciclomotor.",
+     "El que tenga una menor masa autorizada",
+     "Turismo"], correct: 2 },
+
+       { question: "En la medida de lo posible todo usuario de la via implicado en un accidente de circulacion debera... "
+  , options: ["Trasladar a los heridos al hospital más cercano.",
+     "Cambiar de sitio los objetos que ayuden a determinar la responsablidad del accidente.",
+     "Comunicar su identidad a las personas implicadas en el accidente que se lo pidan"], correct: 2 },
+
+       { question: "Si no existe espacio reservado para peatones las personas en silla de ruedas,¿Podran desplazarse por el arcen?"
+  , options: ["Si",
+     "Solo en vias urbanas ",
+     "No"], correct: 0 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",
      "xxx",
-     "xxx"], correct: 1 },
+     "xxx"], correct: 2 },
 
        { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+  , options: ["Si cuando no se comprometa la seguridad de los demás usuarios.",
+     "Solo dentro de poblado.",
+     "NO"], correct: 1 },
 
        { question: "¿uuuuu?"
   , options: ["xxx",
