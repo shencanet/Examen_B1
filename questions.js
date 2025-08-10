@@ -321,80 +321,86 @@ let allQuestions = [
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿El vehiculo con el semaforo verde pero una señal de Ceda el paso puede continuar la marcha?"
+  , options: ["Si porque el semaforo indica que puede continuar la marcha",
+     "Si despues de ceder el paso a los vehiculos que circulen por la via a la que se incorpora",
+     "No primero debe ceder el paso a todos los vehiculos que estan en la via que se incorpora"], correct: 0 },
+
+
+          
+       { question: "¿El vehiculo con el semaforo verde pero un agente que le indica que pare  puede continuar la marcha?"
+  , options: ["Si porque el semaforo indica que puede continuar la marcha",
+     "Si despues de ceder el paso a los vehiculos que circulen por la via a la que se incorpora",
+     "No, debe obedecer las indicaciones del agente "], correct: 2 },
+    
+    
+     { question: "¿Esta permitido parar o estacionar en un carril Bus"
+  , options: ["Esta prohibida la parada pero puedes estacionar",
+     "Esta prohibida la parada y el estacionamiento",
+     "Se permite la parada pero no el estacionamiento "], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Si durante la conduccion tenemos una fuerte discusion o recomendable es..."
+  , options: ["Aumentar la velocidad para llegar antes y descansar en casa",
+     "Parar en un lugar seguro y relajarse",
+     "Parar en una cafeteria y tomar un medicamento para relajarse y continuar la marcha"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Cuando se circula a velocidad ezcesiva..."
+  , options: ["Disminuye la distancia de detencion",
+     "Aumenta la distancia de detencion",
+     "Aumenta la fluidez del trafico"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "La señales de trafico tienen como objetivo..."
+  , options: ["Advertir informar ordenar y regular la circulacion ",
+     "Complementar las normas de circulacion",
+     "Confirmar las reglas de tarfico "], correct: 0 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "En caso de accidente de trafico ¿Que conductores tienen mas posibilidades de morir o de sufrir lesiones graves?"
+  , options: ["los conductores de vehiculos Pesados",
+     "Los codnuctores de Motocicletas",
+     "Los conductores de turismos "], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "En una via con dos semaforos uno a la izquierda en rojo y otro a la derecha verde con una flecha pintada en el suelo que le obliga a girar la izquierda ¿Que debe hacer?"
+  , options: ["si quiero ir recto debo detenerme en el semaforo rojo y esperar a que se ponga en verde",
+     "Si quiero girar a la izquierda debo detenerme en el semaforo rojo y esperar a que se ponga en verde",
+     "Continuar recto ya que el semaforo de la izquierda esta verde"], correct: 0 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿En que caso es mayor la distancia de frenado?"
+  , options: ["Cuando sopla el viento lateral",
+     "calzada mojada de las primeras gotas de lluvia",
+     "Calzada seca"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Si debido a una averia el vehiculo se detiene en un tunel  ¿Que debe hacer el conductor?"
+  , options: ["Solicitar ayuda a otro conductor para remolcar el vehiculo averiado fuera del tunel.",
+     "Dirigir el vehiculo averiado a la zona emergencia mas cercano en tu sentido de la marcha",
+     "Inmovilizar el vehiculo lo mas cerca posible del borde de la calzada"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Un botiquin de primeros auxilios ¿Es obligatorio en dotacion obligatoria vehiculos 9 plazas?"
+  , options: ["Es obligatorio dependiendo numero de plazas",
+     "Es recomendable pero no obligatorio",
+     "Es obligatorio"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-
-     
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Ademas del elevado coste humano los accidentes generan..."
+  , options: ["Daños materiales y sanitarios pero no costes administrativos",
+     "Daños materiales y costes sanitarios y costes administrativos",
+     "Costes sanitarios y costes administrativos pero no daños materiales"], correct: 1 },
 
 
 ];
