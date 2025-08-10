@@ -230,24 +230,24 @@ let allQuestions = [
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 0 },
+       { question: "¿Es correcto adelantar a un ciclista?"
+  , options: ["Si porque el turismo ocupa parte del carril contrario y deja mas de 150 cm de distancia lateral con el ciclista",
+     "no porque el turismo invade el carril contrario sobrepasando la linea continua",
+     "No porque en una via sin arcen esta prohibido adelantar"], correct: 0 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿A que edad pertenecen la mayor parte de los peatones fallecidos en accidente de trafico?"
+  , options: ["75 años en adelante",
+     "6 a 14 años",
+     "17 a 24"], correct: 0 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿Que indica el panel cuadrado de franjas rojas y blancas que lleva colgado en la carga que sobresale de un camion?"
+  , options: ["Señaliza la carga que sobresale del vehiculo por detras",
+     "Que tieene limitada la velocidad",
+     "Que transporta mercancias peligrosas"], correct: 0 },
 
 
      
