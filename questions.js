@@ -279,17 +279,17 @@ let allQuestions = [
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "En una interseccion ¿Que señal debe obedecer el vehiculo de la derecha para girar a la derecha?"
+  , options: ["La señal de la derecha que es un ceda el paso",
+     "La señal de stop que esta en la izquierda por ser la mas restrictiva",
+     "La señal de stop por estar en la izquierda de los dos carriles"], correct: 0 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Si de noche deja su vehiculo inmovilizado en el arcen de esta carretera ¿Que alumbrado debe dejar encendido?"
+  , options: ["La de corto alcance",
+     "La luz de posicion",
+     "la luz de estacionamiento"], correct: 1 },
 
 
      
