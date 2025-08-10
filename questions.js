@@ -189,51 +189,51 @@ let allQuestions = [
 
      //examen 2 
 
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "En un cambio rasante ¿Esta prohibido parar y estacionar?"
+  , options: ["No salvo en los de visibilidad reducida",
+     "Si",
+     "Parar no pero estacionar si"], correct: 0},
+
+     
+       { question: "Circular de noche por una via interurbana en la que con vista normal no distingue un vehiculo pintado de orcuro a 40 metros de distancia¿Puede utilizar la luz de largo alcance?"
+  , options: ["Si porque es una via suficientemente iluminada",
+     "Solo si no existe la posibildda de deslumbrar a otros usuarios",
+     "No, porque es una via urbana"], correct: 2 },
+
+
+     
+       { question: "¿Que puede hacer para evitar los peligros que causa el uso del telefono movil durante la conduccion ?"
+  , options: ["Dejar el movil en el asiento del copiloto y colgar cuando suene una llamada",
+     "Detener el vehiculo en un lugar seguro y utilizarlo.",
+     "Responder solo a las llamadas pero no a los WhastsApp"], correct: 1 },
+
+
+     
+       { question: "Los vehiculos de motor que no disponen de alumbrado de largo alcance, ¿Que alumbrado utilizara cuando circulen por la noche por vias insuficientemente iluminadas?"
+  , options: ["El de posicion",
+     "El de corto alcance",
+     "La señal de emergencia"], correct: 1 },
+
+
+     
+       { question: "¿Cuando existe nieve en la calzada ¿¿Como se debe iniciar la marcha?"
+  , options: ["Utilizamoos la relacion de marcha mas baja posible",
+     "Utilizamos la relacion de marcha mas alta posible",
+     "Pisamos el pedal de embrague antes de pisar el freno"], correct: 1 },
+
+
+     
+       { question: "¿Es obligatorio emplear el dispositivo de preseñalizacion de peligro para advertir la presencia de un turismo averiado en la calzada?"
+  , options: ["No",
+     "Si",
+     "Solo si la visibidad es insuficiente"], correct: 1 },
+
 
      
        { question: "¿uuuuu?"
   , options: ["xxx",
      "xxx",
-     "xxx"], correct: 1 },
-
-
-     
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-
-     
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-
-     
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-
-     
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
-
-
-     
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+     "xxx"], correct: 0 },
 
 
      
