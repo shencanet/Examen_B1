@@ -114,7 +114,7 @@ function checkAnswer() {
   }
 
   currentQuestion++;
-  setTimeout(() => loadQuestion(), 1500);
+  setTimeout(() => loadQuestion(), 3500);
 }
 
 function endQuiz(message) {
