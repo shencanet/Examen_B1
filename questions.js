@@ -149,7 +149,7 @@ let allQuestions = [
 
        { question: "Si lleva pasajero en una motocicleta menor de edad  deba saber que "
   , options: ["Utilizar un sistema de retencion infantil homologado.",
-     "Utilizar el asiento correspondiente del conductor",
+     "Utilizar el asiento detras del conductor",
      "Ir sentado a horcajadas entre conductor y el manillar"], correct: 1 },
 
        { question: "Al salir de una zona privada para incorporarse a la circulacion ¿Se debe ceder el paso?"
@@ -258,24 +258,24 @@ let allQuestions = [
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿En la marca de paso de cebra dentro de poblado es posible pasar sin detenerse?"
+  , options: ["No  nunca",
+     "Si cuando no sea obligatorio detenerse",
+     "Siempre que haya peatones"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "El semaforo cuadrado tiene una flecha verde encendida y el semaforo circular esta rojo ¿Que debes hacer?"
+  , options: ["Circular sin detenerme ",
+     "Detener el vehiculo antes del semaforo circular rojo el semaforo cuadrado solo indica que el carril reversible esta activo",
+     "Detener el vehiculo antes del semaforo cuadrado con flecha verde"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "En un tunel ¿Le esta permitido reallizar un cambio sentido ?"
+  , options: ["Si cuando exista mas de un carril para el sentido de la marcha",
+     "No esta prohibido",
+     "Si cuando exista espacio suficiente y no obstaculice el paso"], correct: 1 },
 
 
      
