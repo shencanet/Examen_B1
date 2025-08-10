@@ -293,31 +293,31 @@ let allQuestions = [
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿Con que dos factores suelen relacionarse mucho de los accidentes mas graves que sufren los jovenes Conductores?"
+  , options: ["Con el consumo de alcohol y las distracciones y una actitud prudente al volante",
+     "Con la falta de experiencia y el consumo de alcohol y drogas",
+     "Con la velocidad excesiva y una adecuada percepcion del riesgo"], correct: 1 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "El conductor de un turismo ¿Que debe hacer para incorporarse a la circulacion?"
+  , options: ["Solo señalizar la maniobra porque los demas vehiculos deben cederle el paso",
+     "Seguir las indicaciones de otra persona",
+     "Asegurarse de que pueda hacerlo sin peligro para los demas usuarios"], correct: 2 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "¿Que le indica la señal  redonda con borde rojo y fondo azul con dos franjas roja  en equis en esta via de sentido unico ?"
+  , options: ["Que esta prohibida la parada y el estacionamiento en el lado donde esta la señal ",
+     "Que esta prohibido la parada  en el lado donde esta la señal peri el estacionamiento si esta permitido",
+     "Que esta prohibido la parada y el estacionamiento en los dos lados de la calle"], correct: 0 },
 
 
      
-       { question: "¿uuuuu?"
-  , options: ["xxx",
-     "xxx",
-     "xxx"], correct: 1 },
+       { question: "Un conductor ¿Se puede distraer si viaja con niños en los asientos tarseros y estos estan molestando?"
+  , options: ["Si ya que posiblemente no estara concentrado en la conduccion",
+     "No al conductor no le afecta la distraccion de los niños",
+     "Solo si los niños no llevan un sistema de retencion Homologado"], correct: 0 },
 
 
      
